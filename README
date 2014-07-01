@@ -1,0 +1,3 @@
+Take a CSV containing product ID, name and it's image's local file path, and replace the file path with the file's base64. Used to import product images into odoo. 
+
+Beware however that the outputted file can be too big to be parsed by Odoo. 
