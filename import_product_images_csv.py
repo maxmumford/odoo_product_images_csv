@@ -22,10 +22,8 @@ with open(args.in_file_path) as csvfile:
             with open(product_file_path, 'rb') as image:
                 image_base64 = image.read().encode("base64")
         except IOError:
-            print()
             print("Could not find the image '%s' - please make sure it is accessible to this script" %
                   product_file_path)
-            print()
 
         new_csv_contents.append([product_id, product_name, image_base64])
 
